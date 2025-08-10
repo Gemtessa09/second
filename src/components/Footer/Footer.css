@@ -58,17 +58,31 @@ border: 2px solid white;
     transform: scale(1.1);
     transition: 0.3s;
 }
-@media screen and (max-width: 768px) {
+@media(max-width: 768px) {
+    .footer{
+       margin: 50px 70px; 
+    }
    .footer-top{
     flex-direction: column;
-    gap: 30px;
-   }
-   .footer-top-right{
-    flex-direction: column; 
+    gap: 50px;
    }
    .footer-bottom{
-    flex-direction: column;
-    gap: 30px;
+   display:flex;
+    flex-direction: column-reverse;
+    margin-bottom: 50px;
    }
+   .footer-top-right{
+    gap: 5px;
+    flex-direction: column;
+    
+   }
+   .footer-email-input{
+    height: 15px;
+    width: 160px;
+   }
+   .footer-subscribe{
+    height: 10px;
+   }
+   
   }
   

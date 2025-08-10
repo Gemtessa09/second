@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="footer-top">
         <div className="footer-top-left">
           {/* <img src={footer_logo} alt=" " /> */}
-          <p>I am a MERN-STACK developer from Ethiopia with 3 years of experience.</p>
+          <p>I am a MERN-STACK developer from Ethiopia with 3 in years of experience.</p>
         </div>
 
         <div className="footer-top-right">
@@ -17,7 +17,7 @@ const Footer = () => {
             <img src={user_icon} alt="" />
             <input type="email" placeholder='Enter your email' />
           </div>
-          <div className="footer-subscribe">Subscribe</div>
+          <div className="footer-subscribe"><p>Subscribe</p></div>
         </div>
       </div>
 

@@ -134,3 +134,8 @@ z-index: -1;
     }
   }
   
+  .service-icon {
+    font-size: 1.5rem; /* Make the emoji bigger */
+    margin-right: 8px; /* Space between icon and text */
+  }
+  

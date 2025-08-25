@@ -8,20 +8,25 @@ const Services = () => {
   return (
     <div id='services' className='services'>
       <div className="services-title"> 
-        <h1> My services</h1>
+        <h1>My Services</h1>
         <img src={theme_pattern} alt="" />
       </div>
       <div className="services-container">
-        {Services_Data.map((service,index)=>{
-            return <div key={index} className="services-format">
-             <h3>{service.s_no}</h3>
-             <h2>{service.s_name}</h2>
-             <p>{service.s_desc}</p>
-             <div className="services-readmore">
-                <p>Read more</p>
-                <img src={arrow_icon} alt="" />
-             </div>
-            </div>
+        {Services_Data.map((service, index) => {
+            return (
+              <div key={index} className="services-format">
+                <h3>{service.s_no}</h3>
+                {/* Display icon next to name */}
+                <h2>
+                  <span className="service-icon">{service.s_icon}</span> {service.s_name}
+                </h2>
+                <p>{service.s_desc}</p>
+                <div className="services-readmore">
+                    <p>Read more</p>
+                    <img src={arrow_icon} alt="" />
+                </div>
+              </div>
+            )
         })}
       </div>
     </div>

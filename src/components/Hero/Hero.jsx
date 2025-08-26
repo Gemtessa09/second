@@ -17,6 +17,7 @@ const Hero = () => {
       </h1>
 
       <p>
+        
         I'm passionate and dedicated Software Engineering 
         and Business Management student at Haramaya University, 
         currently training at the INSA Cyber Talent Center.

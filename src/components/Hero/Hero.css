@@ -11,14 +11,15 @@
     margin-top: 10px;
     width: 360px;
     height: 300px;
+
   }
   
-/* Main heading */
-.hero h1 {
+  /* Main heading */
+  .hero h1 {
     font-size: 60px;
     font-weight: 600;
     text-align: center;
-    width: 70%;
+    width: 80%;
     line-height: 1.5;
     display: flex;
     flex-wrap: wrap;
@@ -36,38 +37,37 @@
   
     opacity: 0;
     transform: translateY(-30px);
-    animation: revealDrop 12s ease-in-out infinite;
+    animation: slideLeftFade 10s ease-in-out infinite;
   }
   
-  /* Sequential delays for each word */
+  /* Sequential delays so words appear one after another */
   .animated-word:nth-child(1)  { animation-delay: 0s; }
-  .animated-word:nth-child(2)  { animation-delay: 0.5s; }
-  .animated-word:nth-child(3)  { animation-delay: 1s; }
-  .animated-word:nth-child(4)  { animation-delay: 1.5s; }
+  .animated-word:nth-child(2)  { animation-delay: 0.2s; }
+  .animated-word:nth-child(3)  { animation-delay: 0.6s; }
+  .animated-word:nth-child(4)  { animation-delay: 0.8s; }
   .animated-word:nth-child(5)  { animation-delay: 2s; }
-  .animated-word:nth-child(6)  { animation-delay: 2.5s; }
-  .animated-word:nth-child(7)  { animation-delay: 3s; }
-  .animated-word:nth-child(8)  { animation-delay: 3.5s; }
-  .animated-word:nth-child(9)  { animation-delay: 4s; }
-  .animated-word:nth-child(10) { animation-delay: 4.5s; }
-  .animated-word:nth-child(11) { animation-delay: 5s; }
+  .animated-word:nth-child(6)  { animation-delay: 2.2s; }
+  .animated-word:nth-child(7)  { animation-delay: 2.4s; }
+  .animated-word:nth-child(8)  { animation-delay: 2.6s; }
+  .animated-word:nth-child(9)  { animation-delay: 2.8s; }
+  .animated-word:nth-child(10) { animation-delay: 3.0s; }
+  .animated-word:nth-child(11) { animation-delay: 3.2s; }
   
-  /* Keyframes for reveal, hold, drop, and restart */
-  @keyframes revealDrop {
+  /* Keyframes: appear sequentially, hold, then all drop together */
+  @keyframes slideLeftFade {
     0%, 10% {
       opacity: 0;
-      transform: translateY(-30px);
+      transform: translateX(-30px); /* start above */
     }
     20%, 70% {
       opacity: 1;
-      transform: translateY(0);
+      transform: translateX(0); /* fully visible and holding */
     }
-    80%, 100% {
+    90%, 100% {
       opacity: 0;
-      transform: translateY(30px);
+      transform: translateX(30px); /* drop down together */
     }
   }
-  
   
   /* Paragraph styling */
   .hero p {

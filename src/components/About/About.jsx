@@ -1,71 +1,66 @@
 import React from 'react';
 import './About.css';
-import theme_pattern from '../../assets/theme_pattern.svg';
-import profile_img from '../../assets/gamtanew1.jpg'; // check file name is exact!
+import theme_pattern from '../../assets/theme_pattern.svg'
+import profile_img from '../../assets/gamtanew1.jpg' // check file name is exact!
 
 const About = () => {
   return (
-    <div id="about" className="about">
+    <div id='about' className='about'>
+
       {/* Title */}
       <div className="about-title">
         <h1>About Me</h1>
-        <img src={theme_pattern} alt="theme pattern" />
+        <img src={theme_pattern} alt="" />
       </div>
 
-      {/* Sections */}
+      {/* Main Section: Photo Left & About Right */}
       <div className="about-sections">
-        {/* Left Section */}
         <div className="about-left">
           <img src={profile_img} alt="Profile" />
         </div>
 
-        {/* Right Section */}
         <div className="about-right">
-          {/* Paragraph */}
-          <div className="about-para">
-            <p>
-              I am a passionate and dedicated Software Engineering and Business
-              Management student at Haramaya University, currently in my 3rd
-              year of study. With a strong foundation in both technical and
-              business disciplines, I bring a unique blend of problem-solving,
-              creativity, and strategic thinking to every project I work on.
-            </p>
-            <p>
-              I come from a humble background and have always been driven by a
-              deep commitment to learning and self-improvement. I have
-              participated in several national programs and earned certificates
-              from prestigious institutions such as Udacity, Google (Eshay),
-              STEM Power Ethiopia, the Ethiopian Ministry of Education, and the
-              Ministry of Peace. I am also actively engaged in the INSA TECH
-              internship program and a summer training at AASTU (INSA Talent
-              Center).
-            </p>
-          </div>
+        <div className="about-para">
+  <p>
+    I am a passionate and driven Software Engineering and Business Management student at Haramaya University,
+    currently in my 4Th year of study. With a strong foundation in both technical and business disciplines,
+    I bring a unique blend of problem-solving, creativity, and strategic thinking to every project I undertake.
+  </p>
+  <p>
+    Coming from a humble background, I am deeply committed to continuous learning and self-improvement.
+    Over the years, I have participated in national programs and earned certificates from Udacity,
+    Google (Eshay), STEM Power Ethiopia, the Ethiopian Ministry of Education, and the Ministry of Peace.
+    In addition, I have gained practical experience through the INSA TECH internship program and advanced
+    training at the INSA Talent Center hosted at AASTU.
+  </p>
+  <p>
+    I also have growing expertise in <strong>Blockchain technologies</strong>, including Ethereum, Smart Contracts,
+    Tokenization, and On-chain/Off-chain integration, which complement my skills in web development,
+    artificial intelligence, and mobile app development. My ultimate goal is to leverage both technical and
+    managerial knowledge to design impactful, innovative, and sustainable technology solutions.
+  </p>
+</div>
 
-          {/* Skills */}
-          <h1 className="skills-title">My Skills</h1>
-          <div className="about-skills">
-            <div className="about-skill"><p>HTML & CSS</p> <hr style={{ width: '80%' }} /></div>
-            <div className="about-skill"><p>JavaScript</p> <hr style={{ width: '75%' }} /></div>
-            <div className="about-skill"><p>React & Node.js</p> <hr style={{ width: '70%' }} /></div>
-            <div className="about-skill"><p>MongoDB</p> <hr style={{ width: '65%' }} /></div>
-            <div className="about-skill"><p>PHP & MySQL</p> <hr style={{ width: '70%' }} /></div>
-            <div className="about-skill"><p>Python</p> <hr style={{ width: '75%' }} /></div>
-            <div className="about-skill"><p>Java</p> <hr style={{ width: '70%' }} /></div>
-            <div className="about-skill"><p>C++</p> <hr style={{ width: '65%' }} /></div>
-            <div className="about-skill"><p>Kotlin (Android Development)</p> <hr style={{ width: '60%' }} /></div>
-            <div className="about-skill"><p>AI & Machine Learning (Beginner)</p> <hr style={{ width: '55%' }} /></div>
+        </div>
+      </div>
 
-            {/* Blockchain Skills */}
-            <div className="about-skill"><p>Blockchain Fundamentals</p> <hr style={{ width: '65%' }} /></div>
-            <div className="about-skill"><p>Ethereum & Smart Contracts (Solidity)</p> <hr style={{ width: '60%' }} /></div>
-            <div className="about-skill"><p>Base (On-chain Development)</p> <hr style={{ width: '55%' }} /></div>
-            <div className="about-skill"><p>Tokenization of Assets (NFT, ERC20)</p> <hr style={{ width: '50%' }} /></div>
-            <div className="about-skill"><p>On-chain / Off-chain Integration</p> <hr style={{ width: '50%' }} /></div>
-
-            <div className="about-skill"><p>Business Management</p> <hr style={{ width: '65%' }} /></div>
-            <div className="about-skill"><p>Soft Skills: Leadership, Communication, Teamwork</p> <hr style={{ width: '90%' }} /></div>
-          </div>
+      {/* Detached Skills Section (90% width) */}
+      <div className="about-skills-container">
+        <h2>My Skills</h2>
+        <div className="about-skills">
+          <div className="about-skill"> <p>HTML & CSS</p> <hr style={{ width: "69%" }} /> </div>
+          <div className="about-skill"> <p>JavaScript</p> <hr style={{ width: "80%" }} /> </div>
+          <div className="about-skill"> <p>React & Node.js</p> <hr style={{ width: "59%" }} /> </div>
+          <div className="about-skill"> <p>MongoDB</p> <hr style={{ width: "80%" }} /> </div>
+          <div className="about-skill"> <p>PHP & MySQL</p> <hr style={{ width: "64%" }} /> </div>
+          <div className="about-skill"> <p>Python</p> <hr style={{ width: "80%" }} /> </div>
+          <div className="about-skill"> <p>Java</p> <hr style={{ width: "85%" }} /> </div>
+          <div className="about-skill"> <p>C++</p> <hr style={{ width: "90%" }} /> </div>
+          <div className="about-skill"> <p>Kotlin</p> <hr style={{ width: "85%" }} /> </div>
+          <div className="about-skill"> <p>AI & ML</p> <hr style={{ width: "73%" }} /> </div>
+          <div className="about-skill"> <p>Blockchain</p> <hr style={{ width: "80%" }} /> </div>
+          <div className="about-skill"> <p>Business Management</p> <hr style={{ width: "49%" }} /> </div>
+          <div className="about-skill"> <p>Soft Skills</p> <hr style={{ width: "70%" }} /> </div>
         </div>
       </div>
 

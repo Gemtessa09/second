@@ -43,7 +43,7 @@ const About = () => {
           </div>
 
           {/* Skills */}
-          <h1>My Skills</h1>
+          <h1 className="skills-title">My Skills</h1>
           <div className="about-skills">
             <div className="about-skill"><p>HTML & CSS</p> <hr style={{ width: '80%' }} /></div>
             <div className="about-skill"><p>JavaScript</p> <hr style={{ width: '75%' }} /></div>

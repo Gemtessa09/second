@@ -1,158 +1,179 @@
-.about{
-
+.about {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 30px 100px ;
-    gap:35px;
+    margin: 30px 100px;
+    gap: 35px;
+}
 
-}
-.about-title{
+/* Title section */
+.about-title {
     position: relative;
-    
 }
-.about-title h1{
-    padding:0px,30px ;
+
+.about-title h1 {
+    padding: 0 30px;
     font-size: 60px;
     font-weight: 600;
 }
-.about-title img{
+
+.about-title img {
     position: absolute;
     bottom: 0;
     right: 0;
     z-index: -1;
 }
-.about-sections{
+
+/* Sections (Left + Right) */
+.about-sections {
     display: flex;
     gap: 80px;
-
 }
-.about-left img{
+
+.about-left img {
     width: 300px;
     height: 420px;
     margin-left: 10px;
 }
-.about-right{
+
+.about-right {
     display: flex;
     flex-direction: column;
     gap: 80px;
 }
-.about-para{
+
+/* Paragraphs */
+.about-para {
     display: flex;
     font-size: 24px;
     gap: 20px;
     flex-direction: column;
 }
-.about-skills{
+
+/* Skills */
+.about-skills {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.about-skill{
+
+.about-skill {
     display: flex;
     align-items: center;
     gap: 50px;
     transition: 0.3s;
-}
-.about-skill{
     min-width: 150px;
     font-size: 24px;
     font-weight: 500;
 }
-.about-skill hr{
+
+.about-skill hr {
     width: 50%;
     height: 8px;
-    background-color: #B923E1;
     border: none;
     outline: none;
     border-radius: 50px;
-    background: linear-gradient(264deg,#DA7C25 -5.09%,#B923E1 106.28%);
+    background: linear-gradient(264deg, #DA7C25 -5.09%, #B923E1 106.28%);
 }
 
-.about-achievements{
+/* Achievements */
+.about-achievements {
     display: flex;
     width: 100%;
     justify-content: space-around;
-
     margin-bottom: 80px;
 }
-.about-achievement{
+
+.about-achievement {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
     transition: 0.5s;
 }
-.about-achievement h1{
+
+.about-achievement h1 {
     font-size: 60px;
     font-weight: 600;
-    background: linear-gradient(270deg,#DA7C25 50.41%,#B923E1 90.25%);
+    background: linear-gradient(270deg, #DA7C25 50.41%, #B923E1 90.25%);
     background-clip: text;
-
     -webkit-text-fill-color: transparent;
 }
-.about-achievement p{
+
+.about-achievement p {
     font-size: 22px;
     font-weight: 500;
 }
-.about-skill:hover{
+
+/* Hover effects */
+.about-skill:hover {
     transform: scale(1.05);
-    transition: 0.3s;
 }
-.about-achievement:hover{
+
+.about-achievement:hover {
     transform: scale(1.12);
-    transition: 0.5s;
 }
-@media(max-width: 768px){
-    .about{
-      gap: 80px;  
-      margin: 40px 60px;
-      align-items: start;
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+    .about {
+        gap: 80px;
+        margin: 40px 60px;
+        align-items: flex-start;
     }
 
-.about-title h1{
-    font-size: 40px;
-    padding: 0px;
-}
-.about-title img{
-   width: 130px; 
-   right: -20px;
-}
-.about-sections{
-    flex-direction: column;
+    .about-title h1 {
+        font-size: 40px;
+        padding: 0;
     }
-    .about-left{
-     display: none;   
-    }
-.about-para{
-    font-size: 18px;
-    line-height: 32px;
-    
-}
-.about-skill{
-    gap: 20px;
-    align-items: center;
 
+    .about-title img {
+        width: 130px;
+        right: -20px;
+    }
+
+    .about-sections {
+        flex-direction: column; /* Stack vertically */
+    }
+
+    .about-left {
+        display: none; /* Hide image on small screens */
+    }
+
+    .about-para {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .about-skill {
+        gap: 20px;
+        align-items: center;
+    }
+
+    .about-skill p {
+        font-size: 20px;
+    }
+
+    .about-skill hr {
+        height: 6px;
+    }
+
+    .about-achievements {
+        justify-content: space-between;
+    }
+
+    .about-achievement {
+        gap: 10px;
+    }
+
+    .about-achievement h1 {
+        font-size: 34px;
+        font-weight: 700;
+    }
+
+    .about-achievement p {
+        text-align: center;
+        font-size: 16px;
+    }
 }
-.about-skill p{
-    font-size: 20px;
-}
-.about-skill hr{
-    height: 6px;
-}
-.about-achievements{
-    justify-content: space-between;
-}
-.about-achievement{
-    gap: 10px;  
-}
-.about-achievement h1{
-  font-size: 34px;  
-  font-weight: 700;
-}
-.about-achievement p{
-    text-align: center;
-    font: 16px;
-}
-} 

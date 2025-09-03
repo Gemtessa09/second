@@ -7,10 +7,10 @@ const About = () => {
   return (
     <div id='about' className='about'>
 
-         <div className="about-title">
+      <div className="about-title">
         <h1>About Me</h1>
         <img src={theme_pattern} alt="" />
-        </div>
+      </div>
 
       <div className="about-sections">
         <div className="about-left">
@@ -28,31 +28,33 @@ const About = () => {
                 I am also actively engaged in the INSA TECH internship program and a summer training at AASTU (INSA Talent Center).</p>
           </div>
 
-    <div className="about-skills">
-  <div className="about-skill"> <p>HTML & CSS</p> <hr style={{ width: "80%" }} /> </div>
-  <div className="about-skill"> <p>JavaScript</p> <hr style={{ width: "75%" }} /> </div>
-  <div className="about-skill"> <p>React & Node.js</p> <hr style={{ width: "70%" }} /> </div>
-  <div className="about-skill"> <p>MongoDB</p> <hr style={{ width: "65%" }} /> </div>
-  <div className="about-skill"> <p>PHP & MySQL</p> <hr style={{ width: "70%" }} /> </div>
-  <div className="about-skill"> <p>Python</p> <hr style={{ width: "75%" }} /> </div>
-  <div className="about-skill"> <p>Java</p> <hr style={{ width: "70%" }} /> </div>
-  <div className="about-skill"> <p>C++</p> <hr style={{ width: "65%" }} /> </div>
-  <div className="about-skill"> <p>Kotlin (Android Development)</p> <hr style={{ width: "60%" }} /> </div>
-  <div className="about-skill"> <p>AI & Machine Learning (Beginner)</p> <hr style={{ width: "55%" }} /> </div>
+          {/* ✅ Added Skills Section Title */}
+          <h1 className="skills-title">My Skills</h1>
 
-  {/* ✅ Blockchain Skills */}
-  <div className="about-skill"> <p>Blockchain Fundamentals</p> <hr style={{ width: "65%" }} /> </div>
-  <div className="about-skill"> <p>Ethereum & Smart Contracts (Solidity)</p> <hr style={{ width: "60%" }} /> </div>
-  <div className="about-skill"> <p>Base (On-chain Development)</p> <hr style={{ width: "55%" }} /> </div>
-  <div className="about-skill"> <p>Tokenization of Assets (NFT, ERC20)</p> <hr style={{ width: "50%" }} /> </div>
-  <div className="about-skill"> <p>On-chain / Off-chain Integration</p> <hr style={{ width: "50%" }} /> </div>
+          <div className="about-skills">
+            <div className="about-skill"> <p>HTML & CSS</p> <hr style={{ width: "80%" }} /> </div>
+            <div className="about-skill"> <p>JavaScript</p> <hr style={{ width: "75%" }} /> </div>
+            <div className="about-skill"> <p>React & Node.js</p> <hr style={{ width: "70%" }} /> </div>
+            <div className="about-skill"> <p>MongoDB</p> <hr style={{ width: "65%" }} /> </div>
+            <div className="about-skill"> <p>PHP & MySQL</p> <hr style={{ width: "70%" }} /> </div>
+            <div className="about-skill"> <p>Python</p> <hr style={{ width: "75%" }} /> </div>
+            <div className="about-skill"> <p>Java</p> <hr style={{ width: "70%" }} /> </div>
+            <div className="about-skill"> <p>C++</p> <hr style={{ width: "65%" }} /> </div>
+            <div className="about-skill"> <p>Kotlin (Android Development)</p> <hr style={{ width: "60%" }} /> </div>
+            <div className="about-skill"> <p>AI & Machine Learning (Beginner)</p> <hr style={{ width: "55%" }} /> </div>
 
-  <div className="about-skill"> <p>Business Management</p> <hr style={{ width: "65%" }} /> </div>
-  <div className="about-skill"> <p>Soft Skills: Leadership, Communication, Teamwork</p> <hr style={{ width: "90%" }} /> </div>
-</div>
+            {/* ✅ Blockchain Skills */}
+            <div className="about-skill"> <p>Blockchain Fundamentals</p> <hr style={{ width: "65%" }} /> </div>
+            <div className="about-skill"> <p>Ethereum & Smart Contracts (Solidity)</p> <hr style={{ width: "60%" }} /> </div>
+            <div className="about-skill"> <p>Base (On-chain Development)</p> <hr style={{ width: "55%" }} /> </div>
+            <div className="about-skill"> <p>Tokenization of Assets (NFT, ERC20)</p> <hr style={{ width: "50%" }} /> </div>
+            <div className="about-skill"> <p>On-chain / Off-chain Integration</p> <hr style={{ width: "50%" }} /> </div>
 
- </div>
-   </div>
+            <div className="about-skill"> <p>Business Management</p> <hr style={{ width: "65%" }} /> </div>
+            <div className="about-skill"> <p>Soft Skills: Leadership, Communication, Teamwork</p> <hr style={{ width: "90%" }} /> </div>
+          </div>
+        </div>
+      </div>
 
       <div className="about-achievements">
         <div className="about-achievement">

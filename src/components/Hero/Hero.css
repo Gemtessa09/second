@@ -7,24 +7,17 @@
     display: flex;
     flex-direction: row;      /* Text left, image right */
     align-items: center;
-<<<<<<< HEAD
     justify-content: space-between;
     gap: 50px;
     padding: 40px 80px;
 }
-=======
-    flex-direction: column;
-    gap: 35px;
-  }
-  
   /* Profile image */
   .hero img {
     margin-top: 10px;
     width: 360px;
     height: 300px;
    border-radius: 25px;
->>>>>>> 9b836e990d277d434875bec056cce0670c86d497
-
+  }
 /* LEFT SIDE TEXT */
 .hero-content {
     flex: 1;

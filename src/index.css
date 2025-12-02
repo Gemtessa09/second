@@ -1,13 +1,1 @@
-*{
- margin: 1px;  padding: 0;  
-}
-  body{
-    font-family: 'Poppins', sans-serif;
-    background-color:dimgrey;
-    color:white;
-    font-family: 'outfit';
-    overflow-x: hidden;
-    
-  }
-  
- 
+@import "tailwindcss";

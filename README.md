@@ -1,4 +1,4 @@
-#  portifolio by me in best ways gemtessa deksis tolere so thank you for your idea
+#  portifolio by me in best ways gemtessa deksis tolere so well come
 
 
 ## Overview Q
